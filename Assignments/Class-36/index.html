@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <style>
+            img {
+                width: 100%;
+                height: auto;
+            }
+        </style>
+        <title>Home page</title>
+    </head>
+    <body>
+        <div>
+            <div>
+                <h1>Welcome to Our Website</h1>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="assets/pages/about.html">About</a></li>
+                    <li><a href="assets/pages/gallery.html">Gallery</a></li>
+                    <li><a href="assets/pages/contact.html">Contact</a></li>
+                    <li><a href="assets/pages/form.html">Form</a></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <div><h2>HTML learning Path</h2></div>
+            <div></div>
+            <p>
+                This site provides stpe-by-step tutorials on HTML. Learn to use
+                <b>tags</b>, <i>attributes, </i> and more. Key topics
+                <mark>HTML basics,</mark>, <u> styling, </u> and
+                <del>depreciated elements.</del>.
+            </p>
+        </div>
+        <div>
+            <div>
+                <h2>Responsive Image Example</h2>
+            </div>
+            <div>
+                <picture>
+                    <source
+                        srcset="
+                            assets/images/home-500.webp 500w,
+                            assets/images/home-500.jpg  500w
+                        "
+                        media="(max-width: 600px)"
+                    />
+                    <source
+                        srcset="
+                            assets/images/home-1000.webp 1000w,
+                            assets/images/home-1000.jpg  1000w
+                        "
+                        media="(max-width: 1200px)"
+                    />
+                    <source
+                        srcset="
+                            assets/images/home-1500.webp 1500w,
+                            assets/images/home-1500.jpg  1500w
+                        "
+                        media="(min-width: 1201px)"
+                    />
+                    <img src="assets/images/home-1500.jpg" alt="home image" />
+                </picture>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <h2>Form Assignment</h2>
+            </div>
+            <div>
+                <form action="#" method="get">
+                    <p>
+                        <label for="username">
+                            Username:
+                            <input
+                                type="text"
+                                placeholder="Enter your username"
+                                name="username"
+                                id="username"
+                            />
+                        </label>
+                    </p>
+                    <p>
+                        <label for="password">
+                            Password:
+                            <input
+                                type="password"
+                                placeholder="Enter your password"
+                                name="password"
+                                id="password"
+                            />
+                        </label>
+                    </p>
+                    <span>Choose your learning topics:</span>
+                    <p>
+                        <label for="html-basic">
+                            <input
+                                type="checkbox"
+                                name="learning-topics"
+                                id="html-basic"
+                                value="html-basic"
+                            />
+                            HTML Basics
+                        </label>
+                    </p>
+                    <p>
+                        <label for="text-formatting">
+                            <input
+                                type="checkbox"
+                                name="learning-topics"
+                                id="text-formatting"
+                                value="text-formatting"
+                            />
+                            Text Formatting
+                        </label>
+                    </p>
+                    <span>Preferred Learning Style: </span>
+                    <p>
+                        <label for="visual">
+                            <input
+                                type="radio"
+                                name="learning-style"
+                                id="visual"
+                                value="visual"
+                            />
+                            Visual
+                        </label>
+                    </p>
+                    <p>
+                        <label for="textual">
+                            <input
+                                type="radio"
+                                name="learning-style"
+                                id="textual"
+                                value="textual"
+                            />
+                            Textual
+                        </label>
+                    </p>
+                    <p>
+                        <button type="submit">submit</button>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

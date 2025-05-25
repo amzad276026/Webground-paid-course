@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Linking Images with Maps in HTML</title>
+  </head>
+  <body>
+    <img src="assets/images/image.jpg" alt="image" usemap="#image" />
+
+    <map name="image"
+      ><area
+        shape="rect"
+        alt="book"
+        title="book"
+        coords="148,452,407,765"
+        href="https://en.wikipedia.org/wiki/Book"
+        target="_blank"
+      /><area
+        shape="rect"
+        alt="laptop"
+        title="laptop"
+        coords="3,1,472,438"
+        href="https://en.wikipedia.org/wiki/Laptop"
+        target="_blank"
+      /><area
+        shape="circle"
+        alt="coffe"
+        title="coffe"
+        coords="565,682,98"
+        href="https://en.wikipedia.org/wiki/Coffee"
+        target="_blank"
+      />
+    </map>
+  </body>
+</html>

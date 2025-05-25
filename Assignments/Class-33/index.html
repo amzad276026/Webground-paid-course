@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      th {
+        text-align: center;
+      }
+      img {
+        width: 100%;
+        height: auto;
+      }
+    </style>
+    <title>Home Page</title>
+  </head>
+  <body>
+    <div>
+      <div>
+        <h1>Welcome to John Doe's Portfolio</h1>
+      </div>
+      <div>
+        <p>
+          <b>John Doe</b> is a passionate <i>web developer</i>. He specializes
+          in creating <mark>high-quality websites</mark> that are visually
+          appealing and <u>functionally rich.</u>. He is constantly learning new
+          technologies to <del>stay behind</del> <b>ahead</b> in the industry.
+        </p>
+      </div>
+    </div>
+
+    <div>
+      <div>
+        <h2>Skills Overview</h2>
+      </div>
+      <div>
+        <table border="1">
+          <tr>
+            <th rowspan="2">Skill</th>
+            <th colspan="3">Proficiency</th>
+          </tr>
+          <tr>
+            <th>Beginner</th>
+            <th>Intermediate</th>
+            <th>Expert</th>
+          </tr>
+          <tr>
+            <td>HTML</td>
+            <td></td>
+            <td></td>
+            <td>&#10003;</td>
+          </tr>
+          <tr>
+            <td>CSS</td>
+            <td></td>
+            <td>&#10003;</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>JavaScript</td>
+            <td></td>
+            <td>&#10003;</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td colspan="4">
+              Proficiency levels are based on John Doe's self-assessment.
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div>
+      <div>
+        <h2>Profile Image</h2>
+      </div>
+      <div>
+        <picture>
+          <source
+            srcset="
+                            assets/images/profile-400.avif 500w,
+                            assets/images/profile-400.webp 500w,
+                            assets/images/profile-400.jpg  500w
+                        "
+            media="(max-width: 600px)"
+          />
+          <source
+            srcset="
+                            assets/images/profile-1000.avif 1000w,
+                            assets/images/profile-1000.webp 1000w,
+                            assets/images/profile-1000.jpg  1000w
+                        "
+            media="(max-width: 1200px)"
+          />
+          <source
+            srcset="
+                            assets/images/profile-1500.avif 1500w,
+                            assets/images/profile-1500.webp 1500w,
+                            assets/images/profile-1500.jpg  1500w
+                        "
+            media="(min-width: 1201px)"
+          />
+
+          <img src="assets/images/profile-1500.jpg" alt="Profile image" />
+        </picture>
+      </div>
+    </div>
+
+    <div>
+      <div>
+        <h2>Navigation</h2>
+      </div>
+      <div>
+        <ul>
+          <li>
+            <a href="assets/pages/about.html">About</a>
+          </li>
+          <li>
+            <a href="assets/pages/gallery.html">Gallery</a>
+          </li>
+          <li>
+            <a href="assets/pages/contact.html">Contact</a>
+          </li>
+          <li>
+            <a href="assets/pages/contact-form.html">Contact Form</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

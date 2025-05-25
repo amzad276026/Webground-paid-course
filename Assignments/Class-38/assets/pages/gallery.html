@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Gallery</title>
+    </head>
+    <body>
+        <div>
+            <div>
+                <h2>Gallery</h2>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <a href="../../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="gallery.html">Gallery</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                    <li>
+                        <a href="form.html">Form</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <h2>Featured Images</h2>
+            </div>
+            <div>
+                <picture>
+                    <source
+                        srcset="
+                            ../images/gallery-500.webp 500w,
+                            ../images/gallery-500.jpg  500w
+                        "
+                        media="(max-width: 600px)"
+                    />
+                    <source
+                        srcset="
+                            ../images/gallery-1000.webp 1000w,
+                            ../images/gallery-1000.jpg  1000w
+                        "
+                        media="(max-width: 1200px)"
+                    />
+                    <source
+                        srcset="
+                            ../images/gallery-1500.webp 1500w,
+                            ../images/gallery-1500.jpg  1500w
+                        "
+                        media="(min-width: 1200px)"
+                    />
+
+                    <img src="../images/gallery-1500.jpg" alt="Gallery Image" />
+                </picture>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <h2>Assignment Form</h2>
+            </div>
+            <div>
+                <form action="#" method="get">
+                    <p>
+                        <label for="full-name">
+                            Full Name:
+                            <input
+                                type="text"
+                                name="full-name"
+                                id="full-name"
+                                placeholder="Enter your full name"
+                            />
+                        </label>
+                    </p>
+                    <p>
+                        <label for="email">
+                            Email Address:
+                            <input
+                                type="email"
+                                name="email"
+                                id="email"
+                                placeholder="Enter your email"
+                            />
+                        </label>
+                    </p>
+                    <p>
+                        <label for="img-id">
+                            Favorite Image ID:
+                            <input
+                                type="tel"
+                                name="img-id"
+                                id="img-id"
+                                placeholder="Enter Image ID or URL"
+                            />
+                        </label>
+                    </p>
+                    <span>Image Type: </span>
+                    <p>
+                        <label for="landscape">
+                            <input type="radio" name="img-type" id="landscape" />
+                            Landscape
+                        </label>
+                    </p>
+                    <p>
+                        <label for="portrait">
+                            <input type="radio" name="img-type" id="portrait" />
+                            Portrait 
+                        </label>
+                    </p>
+
+                    <span>Choose Tags:</span>
+                    <p>
+                        <label for="nature">
+                            <input type="checkbox" name="tags" id="nature" />
+                            Nature
+                        </label>
+                    </p>
+                    <p>
+                        <label for="urban">
+                            <input type="checkbox" name="tags" id="urban" />
+                            Urban
+                        </label>
+                    </p>
+                    <p>
+                        <label for="search-img">
+                            Search for Images:
+                            <input type="search" name="search-img" id="search-img" placeholder="Your images">
+                        </label>
+                    </p>
+                    <p>
+                        <button type="submit">Submit</button>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

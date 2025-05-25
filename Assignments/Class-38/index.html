@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Home</title>
+    </head>
+    <body>
+        <div>
+            <div>
+                <h1>Welcome to Our Website</h1>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="assets/pages/about.html">About</a></li>
+                    <li><a href="assets/pages/gallery.html">Gallery</a></li>
+                    <li><a href="assets/pages/contact.html">Contact</a></li>
+                    <li><a href="assets/pages/form.html">Form</a></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h2>Introduction</h2>
+            </div>
+            <div>
+                <p>
+                    This is a <b>demo website</b> designed for students. You can
+                    learn <i> HTML concepts</i> step by step. Important notes
+                    are <mark>highlighted</mark> , <b>key terms emphasized</b>.
+                    Some changes <del>are removed </del> while others
+                    <u>are inserted.</u>
+                </p>
+            </div>
+        </div>
+        <div>
+            <div><h2>Topics Table</h2></div>
+            <div>
+                <table border="1">
+                    <tr>
+                        <th colspan="2">Topics Covered</th>
+                        <th>Additional Notes</th>
+                    </tr>
+                    <tr>
+                        <td>HTML Basics</td>
+                        <td rowspan="2">Tags</td>
+                        <td>Core concepts</td>
+                    </tr>
+                    <tr>
+                        <td>Attributes</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">Keep Practicing!</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div>
+            <div><h2>Responsive Image</h2></div>
+            <div>
+                <picture>
+                    <source
+                        srcset="
+                            assets/images/home-500.webp 500w,
+                            assets/images/home-500.jpg  500w
+                        "
+                        media="(max-width: 600px)"
+                    />
+                    <source
+                        srcset="
+                            assets/images/home-1000.webp 1000w,
+                            assets/images/home-1000.jpg  1000w
+                        "
+                        media="(max-width: 1200px)"
+                    />
+                    <source
+                        srcset="
+                            assets/images/home-1500.webp 1500w,
+                            assets/images/home-1500.jpg  1500w
+                        "
+                        media="(min-width: 1200px)"
+                    />
+
+                    <img src="assets/images/home-1500.jpg" alt="home image" />
+                </picture>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h2>Assignment Form</h2>
+            </div>
+            <div>
+                <form action="#" method="get">
+                    <p>
+                        <label for="name">
+                            Full Name:
+                            <input
+                                type="text"
+                                name="name"
+                                id="name"
+                                placeholder="Enter your full name"
+                            />
+                        </label>
+                    </p>
+                    <p >
+                        <label for="email">
+                            Email Address:
+                            <input
+                                type="email"
+                                name="email"
+                                id="email"
+                                placeholder="Enter your email"
+                            />
+                        </label>
+                    </p>
+                    <p>
+                        <label for="url">
+                            Enter your website URL:
+                            <input
+                                type="url"
+                                name="url"
+                                id="url"
+                                placeholder="Enter your website URL"
+                            />
+                        </label>
+                    </p>
+                    <span>Gender</span>
+                    <p>
+                        <label for="male">
+                            <input type="radio" name="gender" id="male" />
+                            Male
+                        </label>
+                    </p>
+                    <p>
+                        <label for="female">
+                            <input type="radio" name="gender" id="female" />
+                            Male
+                        </label>
+                    </p>
+
+                    <span>Select Your Interests: </span>
+                    <p>
+                        <label for="html">
+                            <input type="checkbox" name="Interests" id="html" />
+                            HTML
+                        </label>
+                    </p>
+                    <p>
+                        <label for="css">
+                            <input type="checkbox" name="Interests" id="css" />
+                            CSS
+                        </label>
+                    </p>
+                    <p>
+                        <label for="message">
+                            Your Message:
+                            <input
+                                type="text"
+                                name="message"
+                                id="message"
+                                placeholder="Search or write your message"
+                            />
+                        </label>
+                    </p>
+                    <p>
+                        <button type="submit">submit</button>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

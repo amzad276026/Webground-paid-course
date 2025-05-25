@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Form Page</title>
+    </head>
+    <body>
+        <div>
+            <div>
+                <h1>Form Assignment</h1>
+            </div>
+            <div>
+                <form action="#" method="post">
+                    <p>
+                        <label for="readonly-input">
+                            Readonly Input:
+                            <input
+                                type="text"
+                                placeholder="Read-only value"
+                                name="readonly-input"
+                                id="readonly-input"
+                                readonly
+                            />
+                        </label>
+                    </p>
+                    <p>
+                        <label for="disabled-input">
+                            Disabled Input:
+                            <input
+                                type="text"
+                                placeholder="Can't edit this"
+                                name="disabled-input"
+                                id="disabled-input"
+                                disabled
+                            />
+                        </label>
+                    </p>
+                    <p>
+                        <label for="spellcheck-input">
+                            Spellcheck Input:
+                            <input
+                                type="text"
+                                placeholder="Write with spellcheck"
+                                name="spellcheck-input"
+                                id="spellcheck-input"
+                                spellcheck="true"
+                                autofocus
+                            />
+                        </label>
+                    </p>
+                    <p>
+                        <label for="maxlength-input">
+                            Maxlength Input:
+                            <input
+                                type="text"
+                                placeholder="Max 20 chars"
+                                name="maxlength-input"
+                                id="maxlength-input"
+                                maxlength="20"
+                                size="30"
+                            />
+                        </label>
+                    </p>
+
+                    <p>
+                        <button type="submit">submit</button>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

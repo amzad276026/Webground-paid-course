@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>About</title>
+    </head>
+    <body>
+        <div>
+            <div>
+                <h1>About Us</h1>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../pages/about.html">About</a></li>
+                    <li><a href="../pages/gallery.html">Gallery</a></li>
+                    <li><a href="../pages/contact.html">Contact</a></li>
+                    <li><a href="../pages/form.html">Form</a></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h2>Home Page Form</h2>
+            </div>
+            <div>
+                <form action="#" method="get">
+                    <fieldset>
+                        <legend>User Details</legend>
+                        <p>
+                            <label for="fullname">
+                                Full Name:
+                                <input
+                                    type="text"
+                                    id="fullname"
+                                    name="fullname"
+                                    placeholder="Enter your name"
+                                />
+                            </label>
+                        </p>
+                        <p>
+                            <label for="email">
+                                Email Address:
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    placeholder="Enter your email"
+                                />
+                            </label>
+                        </p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Preferences</legend>
+                        <p>
+                            <label for="color">
+                                Choose a Color:
+                                <input type="color" name="color" id="color" />
+                            </label>
+                        </p>
+                        <p>
+                            <label for="price-range">
+                                Preferred Price Range:
+                                <input
+                                    type="range"
+                                    name="price-range"
+                                    id="price-range"
+                                    min="0"
+                                    max="100"
+                                    step="5"
+                                />
+                            </label>
+                        </p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Date and Time</legend>
+                        <p>
+                            <label for="datetime">
+                               Select  DateTime:
+                                <input
+                                    type="datetime-local"
+                                    name="datetime"
+                                    id="datetime"
+                                    min="2025-01-01T00:00"
+                                    max="2025-12-31T23:59"
+                                />
+                            </label>
+                        </p>
+                        <p>
+                            <label for="date">
+                               Choose a Date:
+                                <input
+                                    type="date"
+                                    name="date"
+                                    id="date"
+                                    min="2025-01-01"
+                                    max="2025-12-31"
+                                    step="7"
+                                />
+                            </label>
+                        </p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Options</legend>
+                        <p>
+                            <label for="subscribe">
+                                <input
+                                    type="checkbox"
+                                    name="subscribe"
+                                    id="subscribe"
+                                />
+                                Subscribe to Updates
+                            </label>
+                        </p>
+                        <p>
+                            <label for="option-one">
+                                <input
+                                    type="radio"
+                                    name="options"
+                                    id="option-one"
+                                    value="option-one"
+                                />
+                                Option 1
+                            </label>
+                        </p>
+                        <p>
+                            <label for="option-two">
+                                <input
+                                    type="radio"
+                                    name="options"
+                                    id="option-two"
+                                    value="option-two"
+                                />
+                                Option 2
+                            </label>
+                        </p>
+                    </fieldset>
+
+                    <p>
+                        <button type="submit">Submit</button>
+                        <button type="reset">Reset</button>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

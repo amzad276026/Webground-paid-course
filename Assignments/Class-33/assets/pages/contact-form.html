@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <style>
+            img {
+                width: 100%;
+                height: auto;
+            }
+        </style>
+        <title>Contact Form page</title>
+    </head>
+    <body>
+        <div>
+            <div>
+                <h1>Contact Form</h1>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <h2>Form Banner</h2>
+            </div>
+
+            <div>
+                <picture>
+                    <source
+                        srcset="
+                            ../images/contact-form-500.avif 500w,
+                            ../images/contact-form-500.webp 500w,
+                            ../images/contact-form-500.jpg  500w
+                        "
+                        media="(max-width: 600px)"
+                    />
+                    <source
+                        srcset="
+                            ../images/contact-form-1000.avif 1000w,
+                            ../images/contact-form-1000.webp 1000w,
+                            ../images/contact-form-1000.jpg  1000w
+                        "
+                        media="(max-width: 1200px)"
+                    />
+                    <source
+                        srcset="
+                            ../images/contact-form-1500.avif 1500w,
+                            ../images/contact-form-1500.webp 1500w,
+                            ../images/contact-form-1500.jpg  1500w
+                        "
+                        media="(min-width: 1201px)"
+                    />
+
+                    <img
+                        src="../images/contact-form-1500.jpg"
+                        alt="Form Banner  Image"
+                    />
+                </picture>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <form action="#" method="post">
+                    <fieldset name="name">
+                        <legend>Personal Info</legend>
+                        <p>
+                            <label for="fname">
+                                First Name:
+                                <input type="text" name="fname" id="fname" />
+                            </label>
+                        </p>
+                        <p>
+                            <label for="lname">
+                                Last Name:
+                                <input type="text" name="lname" id="lname" />
+                            </label>
+                        </p>
+                    </fieldset>
+                    <fieldset name="message">
+                        <legend>Message Details</legend>
+                        <p>
+                            <label for="message">
+                                Message:
+                                <textarea
+                                    name="message"
+                                    id="message"
+                                ></textarea>
+                            </label>
+                        </p>
+                    </fieldset>
+                    <p>
+                        <button type="submit">Submit</button>
+                    </p>
+                </form>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <ul>
+                    <li>
+                        <a href="../../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="../pages/about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="../pages/gallery.html">Gallery</a>
+                    </li>
+                    <li>
+                        <a href="../pages/contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Image In HTML | Srcset & Sizes Attribute</title>
+  </head>
+  <body>
+    <div>
+      <div>
+        <h1>Responsive Image In HTML</h1>
+        <hr />
+      </div>
+      <div>
+        <div>
+          <h2>With px Unit</h2>
+        </div>
+        <div>
+          <img
+            src="assets/images/image-1280px.jpg"
+            alt="Default Image"
+            srcset="
+                        assets/images/image-480.png     480w,
+                        assets/images/image-1024px.png 1024w,
+                        assets/images/image-1280px.jpg 1280w
+                    "
+            sizes="
+                    (max-width: 480px) 200px ,
+                    (max-width: 1024px) 500px,
+                    (max-width: 1280px) 700px,
+                    300px
+                    "
+          />
+        </div>
+      </div>
+      <hr />
+      <div>
+        <div>
+          <h2>With vw Unit</h2>
+        </div>
+        <div>
+          <img
+            src="assets/images/image-1280px.jpg"
+            alt="Default Image"
+            srcset="
+                        assets/images/image-480.png     480w,
+                        assets/images/image-1024px.png 1024w,
+                        assets/images/image-1280px.jpg 1280w
+                    "
+            sizes="
+                    (max-width: 480px) 80vw,
+                    (max-width: 1024px) 90vw,
+                    (max-width: 1280px) 70vw,
+                    30vw
+                    "
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

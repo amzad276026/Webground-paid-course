@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <style>
+            img {
+                width: 100%;
+                height: auto;
+            }
+        </style>
+        <title>About page</title>
+    </head>
+    <body>
+        <div>
+            <div>
+                <h1>About Us</h1>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="form.html">Form</a></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <div><h2>Our Mission</h2></div>
+            <div>
+                <p>
+                    We aim to teach HTML in a structured, engaging way. From
+                    <b>basics</b> to <mark>advanced topics</mark>, our lessons
+                    cater to all levels, Learn via <b>real-world examples.</b>
+                </p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h2>Responsive Image</h2>
+            </div>
+            <div>
+                <picture>
+                    <source
+                        srcset="
+                            ../images/about-500.webp 500w,
+                            ../images/about-500.jpg  500w
+                        "
+                        media="(max-width: 600px)"
+                    />
+                    <source
+                        srcset="
+                            ../images/about-1000.webp 1000w,
+                            ../images/about-1000.jpg  1000w
+                        "
+                        media="(min-width: 1200px)"
+                    />
+
+                    <img src="../images/about-1500.jpg" alt="about image" />
+                </picture>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <h2>Assignment Form</h2>
+            </div>
+            <div>
+                <form action="#" method="get">
+                    <p>
+                        <label for="fullname">
+                            Full Name:
+                            <input
+                                type="text"
+                                placeholder="Enter your fullname"
+                                name="fullname"
+                                id="fullname"
+                            />
+                        </label>
+                    </p>
+                    <p>
+                        <label for="bio">
+                            Bio:
+                            <input
+                                type="text"
+                                placeholder="Short bio"
+                                name="bio"
+                                id="bio"
+                            />
+                        </label>
+                    </p>
+                    <span>Select your skill set:</span>
+                    <p>
+                        <label for="coding">
+                            <input
+                                type="checkbox"
+                                name="skill-set"
+                                id="coding"
+                                value="coding"
+                            />
+                            Coding
+                        </label>
+                    </p>
+                    <p>
+                        <label for="design">
+                            <input
+                                type="checkbox"
+                                name="skill-set"
+                                id="design"
+                                value="design"
+                            />
+                            Design
+                        </label>
+                    </p>
+                    <span>Experience Level: </span>
+                    <p>
+                        <label for="beginner">
+                            <input
+                                type="radio"
+                                name="experience-level"
+                                id="beginner"
+                                value="beginner"
+                            />
+                            Beginner
+                        </label>
+                    </p>
+                    <p>
+                        <label for="advanced">
+                            <input
+                                type="radio"
+                                name="experience-level"
+                                id="advanced"
+                                value="advanced"
+                            />
+                            Advanced
+                        </label>
+                    </p>
+                    <p>
+                        <button type="submit">submit</button>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

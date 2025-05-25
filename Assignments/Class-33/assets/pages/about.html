@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <style>
+             img{
+                width: 100%;
+                height: auto;
+            }
+        </style>
+        <title>About page</title>
+    </head>
+    <body>
+        <div>
+            <div>
+                <h1>About John Doe</h1>
+            </div>
+            <div>
+                <p>
+                    <b>John Doe</b> is highly skilled <i>web developer</i> in
+                    <mark>front-end</mark> and <u>back-end</u> development. He
+                    enjoys creating websites that are not only
+                    <b>functional</b> but also visually appealing.
+                </p>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <h2>Profile Picture</h2>
+            </div>
+            <div>
+                <picture>
+                    <source
+                        srcset="
+                            ../images/about-500.avif 500w,
+                            ../images/about-500.webp 500w,
+                            ../images/about-500.jpg  500w
+                        "
+                        media="(max-width: 600px)"
+                    />
+                    <source
+                        srcset="
+                            ../images/about-1000.avif 1000w,
+                            ../images/about-1000.webp 1000w,
+                            ../images/about-1000.jpg  1000w
+                        "
+                        media="(max-width: 1200px)"
+                    />
+                    <source
+                        srcset="
+                            ../images/about-1500.avif 1500w,
+                            ../images/about-1500.webp 1500w,
+                            ../images/about-1500.jpg  1500w
+                        "
+                        media="(min-width: 1201px)"
+                    />
+
+                    <img src="../images/about-1500.jpg" alt="Profile picture" />
+                </picture>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <div>
+                    <h2>technologies</h2> 
+                </div>
+                <div>
+                    <ol>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ol>
+                </div>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <a href="../../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="../pages/contact.html">Contact</a>
+                    </li>
+                    <li>
+                        <a href="../pages/gallery.html">Gallery</a>
+                    </li>
+                    <li>
+                        <a href="../pages/contact-form.html">Contact Form</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>

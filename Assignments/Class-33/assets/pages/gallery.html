@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <style>
+             img{
+                width: 100%;
+                height: auto;
+            }
+        </style>
+        <title>Gallery Page</title>
+    </head>
+    <body>
+        <div>
+            <div>
+                <h1>Gallery</h1>
+            </div>
+            <div>
+                <p>Here are some of the projects John has worked on:</p>
+                <div>
+                    <figure>
+                        <img
+                            src="../images/gallery-500.jpg"
+                            alt="Gallery image"
+                            srcset="
+                                ../images/gallery-500.avif 500w,
+                                ../images/gallery-500.webp 500w,
+                                ../images/gallery-500.jpg  500w
+                            "
+                        />
+                        <figcaption>Project 1: E-commerce Website</figcaption>
+                    </figure>
+                </div>
+                <div>
+                    <figure>
+                        <img
+                            src="../images/gallery-500.jpg"
+                            alt="Gallery image"
+                            srcset="
+                                ../images/gallery-500.avif 500w,
+                                ../images/gallery-500.webp 500w,
+                                ../images/gallery-500.jpg  500w
+                            "
+                        />
+                        <figcaption>Project 1: Blogging Platform</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <h2>Responsive Image Example</h2>
+            </div>
+            <div>
+                <picture>
+                    <source
+                        srcset="
+                            ../images/gallery-500.avif 500w,
+                            ../images/gallery-500.webp 500w,
+                            ../images/gallery-500.jpg  500w
+                        "
+                        media="(max-width: 600px)"
+                    />
+                    <source
+                        srcset="
+                            ../images/gallery-1000.avif 1000w,
+                            ../images/gallery-1000.webp 1000w,
+                            ../images/gallery-1000.jpg  1000w
+                        "
+                        media="(max-width: 1200px)"
+                    />
+                    <source
+                        srcset="
+                            ../images/gallery-1500.avif 1500w,
+                            ../images/gallery-1500.webp 1500w,
+                            ../images/gallery-1500.jpg  1500w
+                        "
+                        media="(min-width: 1201px)"
+                    />
+
+                    <img src="../images/profile-1500.jpg" alt="Gallery image" />
+                </picture>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <ul>
+                    <li>
+                        <a href="../../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="../pages/about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="../pages/contact.html">Contact</a>
+                    </li>
+                    <li>
+                        <a href="../pages/contact-form.html">Contact Form</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>

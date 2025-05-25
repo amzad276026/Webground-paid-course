@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <style>
+            img {
+                width: 100%;
+                height: auto;
+            }
+        </style>
+        <title>Gallery page</title>
+    </head>
+    <body>
+        <div>
+            <div>
+                <h1>Gallery</h1>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="form.html">Form</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <h2>Image Collection</h2>
+            </div>
+            <div>
+                <picture>
+                    <source
+                        srcset="
+                            ../images/gallery-500.webp 500w,
+                            ../images/gallery-500.jpg  500w
+                        "
+                        media="(max-width: 600px)"
+                    />
+                    <source
+                        srcset="
+                            ../images/gallery-1000.webp 1000w,
+                            ../images/gallery-1000.jpg  1000w
+                        "
+                        media="(min-width: 1200px)"
+                    />
+
+                    <img src="../images/gallery-1500.jpg" alt="gallery image" />
+                </picture>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <h2>Assignment</h2>
+            </div>
+            <div>
+                <form action="#" method="get">
+                    <span>Favorite Image Type:</span>
+                    <p>
+                        <label for="landscape">
+                            <input
+                                type="checkbox"
+                                name="favorite"
+                                id="landscape"
+                                value="landscape"
+                            />
+                            Landscape
+                        </label>
+                    </p>
+                    <p>
+                        <label for="portrait">
+                            <input
+                                type="checkbox"
+                                name="favorite"
+                                id="portrait"
+                                value="portrait"
+                            />
+                            Portrait
+                        </label>
+                    </p>
+                    <span>Select your favorite categories: </span>
+                    <p>
+                        <label for="nature">
+                            <input
+                                type="radio"
+                                name="categories"
+                                id="nature"
+                                value="nature"
+                            />
+                            Nature
+                        </label>
+                    </p>
+                    <p>
+                        <label for="architecture">
+                            <input
+                                type="radio"
+                                name="categories"
+                                id="architecture"
+                                value="architecture"
+                            />
+                            Architecture
+                        </label>
+                    </p>
+                    <p>
+                        <button type="submit">submit</button>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

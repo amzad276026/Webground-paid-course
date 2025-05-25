@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <style>
+            img {
+                width: 100%;
+                height: auto;
+            }
+        </style>
+        <title>Contact us page</title>
+    </head>
+    <body>
+        <div>
+            <div>
+                <h1>Contact us</h1>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="form.html">Form</a></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <div><h2>Get in Touch</h2></div>
+            <div>
+                <p>
+                    Feel free to reach out to us for any queries or support. We
+                    are here to assist you with <b>HTML Learning</b>,
+                    <mark>programming challenges</mark>, and more.
+                </p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h2>Responsive Image</h2>
+            </div>
+            <div>
+                <picture>
+                    <source
+                        srcset="
+                            ../images/contact-500.webp 500w,
+                            ../images/contact-500.jpg  500w
+                        "
+                        media="(max-width: 600px)"
+                    />
+                    <source
+                        srcset="
+                            ../images/contact-1000.webp 1000w,
+                            ../images/contact-1000.jpg  1000w
+                        "
+                        media="(min-width: 1200px)"
+                    />
+
+                    <img src="../images/contact-1500.jpg" alt="contact image" />
+                </picture>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <h2>Assignment Form</h2>
+            </div>
+            <div>
+                <form action="#" method="get">
+                    <p>
+                        <label for="fullname">
+                            Your Name:
+                            <input
+                                type="text"
+                                placeholder="Enter your fullname"
+                                name="fullname"
+                                id="fullname"
+                            />
+                        </label>
+                    </p>
+                    <p>
+                        <label for="address">
+                            Email Address:
+                            <input
+                                type="text"
+                                placeholder="Enter your address"
+                                name="address"
+                                id="address"
+                            />
+                        </label>
+                    </p>
+                    <span>Reason for Contact:</span>
+                    <p>
+                        <label for="feedback">
+                            <input
+                                type="checkbox"
+                                name="reason"
+                                id="feedback"
+                                value="feedback"
+                            />
+                            Feedback
+                        </label>
+                    </p>
+                    <p>
+                        <label for="support">
+                            <input
+                                type="checkbox"
+                                name="reason"
+                                id="support"
+                                value="support"
+                            />
+                            Support
+                        </label>
+                    </p>
+                    <span>Contact Preferences: </span>
+                    <p>
+                        <label for="Email">
+                            <input
+                                type="radio"
+                                name="preferences"
+                                id="Email"
+                                value="Email"
+                            />
+                            Email
+                        </label>
+                    </p>
+                    <p>
+                        <label for="phone">
+                            <input
+                                type="radio"
+                                name="preferences"
+                                id="phone"
+                                value="phone"
+                            />
+                            Phone
+                        </label>
+                    </p>
+                    <p>
+                        <button type="submit">submit</button>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

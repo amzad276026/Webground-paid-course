@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <style>
+            img {
+                width: 100%;
+                height: auto;
+            }
+        </style>
+        <title>
+            Home page
+        </title>
+    </head>
+    <body>
+        <div>
+            <div>
+                <h1>Welcome to Our Website</h1>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="assets/pages/about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="assets/pages/gallery.html">Gallery</a>
+                    </li>
+                    <li>
+                        <a href="assets/pages/contact.html">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#">Form</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <h2>Introduction</h2>
+            </div>
+            <div>
+                <p>
+                    This is a <b>demo website</b> designed for students. You can
+                    learn <i>HTML concepts</i> step by step. Importtant notes
+                    are <mark>highlithted</mark>, and key
+                    <b>key terms are emphasized.</b> Some change
+                    <del>are removed</del> while others <u>are inserted.</u>
+                </p>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <h2>Topics Table</h2>
+            </div>
+            <div>
+                <table border="1">
+                    <tr>
+                        <th colspan="2">Topics Covered</th>
+                        <th>Additional Notes</th>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">HTML Basics</td>
+                        <td>Tags</td>
+                        <td rowspan="2">Core concepts</td>
+                    </tr>
+                    <tr>
+                        <td>Attributes</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">Keep Practiciping!</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <h2>Responsive</h2>
+            </div>
+            <div>
+                <figure>
+                    <picture>
+                        <source
+                            srcset="
+                                assets/images/home-500.webp 510w,
+                                assets/images/home-500.jpg  500w
+                            "
+                            media="(max-width: 600px)"
+                        />
+                        <source
+                            srcset="
+                                assets/images/home-1000.webp 1010w,
+                                assets/images/home-1000.jpg  1000w
+                            "
+                            media="(max-width: 1200px)"
+                        />
+                        <source
+                            srcset="
+                                assets/images/home-1500.webp 1510w,
+                                assets/images/home-1500.jpg  1500w
+                            "
+                            media="(min-width: 1201px)"
+                        />
+
+                        <img
+                            src="assets/images/home-1500.jpg"
+                            alt="Home image"
+                        />
+                    </picture>
+                    <figcaption>Home image</figcaption>
+                </figure>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <h2>Feedback Form</h2>
+            </div>
+            <div>
+                <form action="#" method="post">
+                    <fieldset>
+                        <legend>Your Feedback</legend>
+                        <p>
+                            <label for="name">Name:</label>
+                            <input type="text" name="name" id="name" />
+                        </p>
+                        <p>
+                            <label for="pass">Password:</label>
+                            <input type="password" name="pass" id="pass" />
+                        </p>
+                        <p>
+                            <input
+                                type="hidden"
+                                name="home-token"
+                                id="home-token"
+                                value="@!#flkjadljdf"
+                            />
+                        </p>
+                    </fieldset>
+                    <p>
+                        <button type="submit">submit</button>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

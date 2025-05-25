@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <style>
+            img {
+                width: 100%;
+                height: auto;
+            }
+        </style>
+        <title>About page</title>
+    </head>
+    <body>
+        <div>
+            <div>
+                <h1>About Us</h1>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <a href="../../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="gallery.html">Gallery</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#">Form</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <h2>Our Mission</h2>
+            </div>
+            <div>
+                <p>
+                    We aim to provide <b>quality education</b> in
+                    <i>web development</i>. Our tutorials are
+                    <mark>easy to follow</mark> and
+                    <b>stuctured for learning.</b>
+                </p>
+            </div>
+        </div>
+
+        <div>
+            <div><h2>Team Image</h2></div>
+            <div>
+                <figure>
+                    <picture>
+                        <source
+                            srcset="
+                                ../images/about-500.webp 510w,
+                                ../images/about-500.jpg  500w
+                            "
+                            media="(max-width: 600px)"
+                        />
+                        <source
+                            srcset="
+                                ../images/about-1000.webp 1010w,
+                                ../images/about-1000.jpg  1000w
+                            "
+                            media="(max-width: 1200px)"
+                        />
+                        <source
+                            srcset="
+                                ../images/about-1500.webp 1510w,
+                                ../images/about-1500.jpg  1500w
+                            "
+                            media="(min-width: 1201px)"
+                        />
+
+                        <img src="../images/about-1500.jpg" alt="About image" />
+                    </picture>
+                    <figcaption>About image</figcaption>
+                </figure>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h2>Feedback Form</h2>
+            </div>
+            <div>
+                <form action="#" method="post">
+                    <fieldset>
+                        <legend>Your Feedback</legend>
+                        <p>
+                            <label for="name">Name:</label>
+                            <input type="text" name="name" id="name" />
+                        </p>
+                        <p>
+                            <label for="pass">Password:</label>
+                            <input type="password" name="pass" id="pass" />
+                        </p>
+                        <p>
+                            <input
+                                type="hidden"
+                                name="about-token"
+                                id="about-token"
+                                value="@!#flkjadljdf"
+                            />
+                        </p>
+                    </fieldset>
+                    <p>
+                        <button type="submit">submit</button>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

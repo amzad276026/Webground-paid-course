@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>About</title>
+    </head>
+    <body>
+        <div>
+            <div>
+                <h1>About Us</h1>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <a href="../../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="../pages/about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="../pages/gallery.html">Gallery</a>
+                    </li>
+                    <li>
+                        <a href="../pages/contact.html">Contact</a>
+                    </li>
+                    <li>
+                        <a href="../pages/form.html">Form</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <h2>Our Journey</h2>
+            </div>
+            <div>
+                <p>
+                    Learn about <b>how we started</b> and our
+                    <b>core values </b>. We focus on <i>innovation</i> and
+                    <i>dedication.</i>
+                </p>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <h2>Responsive Image</h2>
+            </div>
+            <div>
+                <picture>
+                    <source
+                        srcset="
+                            ../images/about-500.webp 500w,
+                            ../images/about-500.jpg  500w
+                        "
+                        media="(max-width: 600px)"
+                    />
+                    <source
+                        srcset="
+                            ../images/about-1000.webp 1000w,
+                            ../images/about-1000.jpg  1000w
+                        "
+                        media="(max-width: 1200px)"
+                    />
+                    <source
+                        srcset="
+                            ../images/about-1500.webp 1500w,
+                            ../images/about-1500.jpg  1500w
+                        "
+                        media="(min-width: 1200px)"
+                    />
+
+                    <img src="../images/about-1500.jpg" alt="about image" />
+                </picture>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h2>Form</h2>
+            </div>
+            <div>
+                <form action="#" method="get">
+                    <fieldset>
+                        <legend>Contact Info</legend>
+                        <p>
+                            <label for="email">
+                                Email:
+                                <input
+                                    type="email"
+                                    name="email"
+                                    id="email"
+                                    placeholder="Enter your email"
+                                />
+                            </label>
+                        </p>
+                        <p>
+                            <label for="phone">
+                                Phone Number:
+                                <input
+                                    type="tel"
+                                    name="phone"
+                                    id="phone"
+                                    placeholder="Enter your phone number"
+                                />
+                            </label>
+                        </p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Preferences</legend>
+                        <p>
+                            <label for="amount">
+                                Preferred Amount:
+                                <input
+                                    type="number"
+                                    name="amount"
+                                    id="amount"
+                                    value="20"
+                                    min="1"
+                                    max="50"
+                                />
+                            </label>
+                        </p>
+                        <p>
+                            <label for="budget-range">
+                                Budget Range:
+                                <input
+                                    type="range"
+                                    name="budget-range"
+                                    id="budget-range"
+                                    min="5"
+                                    max="100"
+                                    value="20"
+                                    step="10"
+                                />
+                            </label>
+                        </p>
+                        <p>
+                            <label for="pcolor">
+                                Preferred Theme Color
+                                <input type="color" name="pcolor" id="pcolor" />
+                            </label>
+                        </p>
+                        <p>
+                            <button type="submit">Submit</button>
+                        </p>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
